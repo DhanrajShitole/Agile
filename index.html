@@ -3,10 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ShopLite</title>
+  <title>ShopLite | Everyday Backpack</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; color: #222; }
+    header, main { max-width: 960px; margin: auto; padding: 24px; }
+    header { border-bottom: 1px solid #ddd; }
+    .product { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 32px; }
+    .image { min-height: 300px; display: grid; place-items: center; background: #f1f3f5; font-size: 5rem; }
+    .price { font-size: 1.5rem; font-weight: bold; }
+    button { padding: 12px 20px; border: 0; background: #1769aa; color: white; cursor: pointer; }
+    @media (max-width: 600px) { .product { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
   <header><h1>ShopLite</h1></header>
-  <main><p>Your everyday shopping destination.</p></main>
+  <main>
+    <nav aria-label="Breadcrumb">Home / Bags / Everyday Backpack</nav>
+    <section class="product">
+      <div class="image" role="img" aria-label="Illustration of a backpack">??</div>
+      <div>
+        <h2>Everyday Backpack</h2>
+        <p class="price">$49.99</p>
+        <p>A comfortable, durable backpack with plenty of room for your daily essentials.</p>
+        <p>Available in black, blue, and olive.</p>
+        <button type="button">Add to cart</button>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
